@@ -1,17 +1,17 @@
 from googleapiclient.http import MediaFileUpload
 from Google import Create_Service
 
-SECRET = 'client_secret_904522675884-3lbn4r8ofhol51juuoa8sis76di3fmm7.apps.googleusercontent.com.json'
+SECRET = '<ADD CLENT SECRET FILE LOCATION>'
 API_NAME = 'drive'
 API_VERSION = 'v3'
 SCOPE = ['https://www.googleapis.com/auth/drive']
 
 service = Create_Service(SECRET, API_NAME, API_VERSION, SCOPE)
 
-folder_id = '1SvvHNcap4c0qbLcY5iUBoqwC42krlVon'
+folder_id = '<FOLDER-NAME>'
 
-file_names = ['test-plastic.mp4']
-mime_types = ['video/mp4']
+file_names = <FILE-NAME>
+mime_types = <MIME-TYPE>
 
 for file_name, mime_type in zip(file_names, mime_types):
     file_metadata = {
