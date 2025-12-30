@@ -1,0 +1,7 @@
+{
+  "client_secret_file": "client_secret.json",
+  "api_name": "drive",
+  "api_version": "v3",
+  "scopes": ["https://www.googleapis.com/auth/drive"],
+  "folder_id": "YOUR_FOLDER_ID"
+}
